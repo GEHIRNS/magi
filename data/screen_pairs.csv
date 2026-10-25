@@ -1,0 +1,14 @@
+model,reference,decisive_tasks,solves_gained,solves_lost,solves_sign_test_p,loops_gained,loops_lost,loops_sign_test_p
+magi-1.0,random L,86,26,4,5.9e-05,4,23,0.00031
+greedy L,random L,86,31,2,1.3e-07,1,25,8e-07
+magi-1.0 + q8 KV,magi-1.0,86,5,9,0.42,10,3,0.092
+magi-1.0 + q8 KV (8192 budget),magi-1.0 + q8 KV,86,7,2,0.18,26,0,3e-08
+FFN gate L24-31 to IQ2_XXS,magi-1.0,86,12,8,0.5,15,4,0.019
+candidate d,magi-1.0,86,5,18,0.011,18,5,0.011
+magi-beta-1 pre-release build,magi-1.0,86,11,6,0.33,7,3,0.34
+magi-beta-1,magi-1.0,86,6,13,0.17,6,5,1
+magi-beta-1,magi-beta-1 pre-release build,86,7,19,0.029,4,7,0.55
+candidate d with magi-1.0's attention,magi-1.0,86,,,,21,3,0.00028
+candidate d with magi-1.0's attention (without HumanEval+),magi-1.0,55,3,13,0.021,15,3,0.0075
+candidate d,magi-beta-1,86,11,17,0.34,16,4,0.012
+candidate d,candidate d with magi-1.0's attention,86,,,,10,15,0.42

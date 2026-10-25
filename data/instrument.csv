@@ -1,0 +1,6 @@
+quantization,file_GiB,E_long_top1_disagreement_pct,E_chat_top1_disagreement_pct,E_code_top1_disagreement_pct,E_code_ppl_ratio_vs_BF16
+Q8_0 (Unsloth),4.1746,0.659,1.099,1.586,1.008
+Q4_K_M (Unsloth),2.5527,3.101,5.325,5.68,1.026
+Q3_K_M (Unsloth),2.1359,5.562,9.917,8.385,0.926
+Q2_K (bartowski),2.0413,9.976,18.417,13.088,1.01
+UD-IQ2_XXS (Unsloth),1.4158,18.022,27.833,18.768,1.104

@@ -1,0 +1,11 @@
+candidate,change,file_GiB,E_long_top1_disagreement_pct,E_chat_top1_disagreement_pct,J_pct,guard_J_le_16.36,screened,screen_decisive_solved,screen_decisive_loops,screen_controls,chat_flags_of_48,gate
+reference,reference: greedy M (magi-1.0's types),1.7972,7.521,12.934,10.227,,no,,,,,
+a,FFN of layers 28-29 at IQ1_M,1.7756,7.546,14.008,10.777,pass,no,,,,,
+b,a + FFN of layers 24-27 and 30 at IQ2_XXS + full-attention k/v/output at Q6_K,1.7646,7.729,14.851,11.290,pass,no,,,,,
+c,b + FFN gates outside layers 8-15 at IQ2_XXS,1.7179,8.626,15.999,12.312,pass,no,,,,,
+d,"c + FFN of layers 0, 2, 27 at IQ1_M",1.6992,9.096,17.404,13.250,pass,yes,45,22,29,0,fail
+e,"FFN at IQ2_XXS except layers 8-15 and 31 (IQ3_XXS) and 0, 2, 27-29 (IQ1_M) + full-attention k/v/output at Q6_K",1.6251,11.349,21.641,16.495,fail,no,,,,,
+f,e + DeltaNet output gate at IQ2_XXS + DeltaNet input projections outside layers 8-23 at IQ3_XXS,1.5537,12.338,23.156,17.747,fail,no,,,,,
+g,f + embedding at Q3_K,1.4750,13.022,24.035,18.529,fail,no,,,,,
+x,"g + FFN of layers 12, 14, 15, 24 at IQ1_M",1.4400,14.701,25.892,20.297,fail,no,,,,,
+xx,IQ1_S everywhere except the embedding (Q2_K) and the DeltaNet gates (Q8_0),0.8605,55.409,67.587,61.498,fail,no,,,,,

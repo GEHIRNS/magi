@@ -1,0 +1,7 @@
+config,model_file,kv_cache,tasks_passed,tasks_total,index_pct,weights_GiB,footprint_GiB,capability_density_halvings_per_GiB,decode_tok_per_s,decode_tokens,decode_time_s,wall_time_h
+magi-1.0 + 8-bit KV,GEHIRNS/magi-1.0,q8_0,1834,2313,80.64,1.787,2.653,0.893,181.4,5540102,30545,8.68
+magi-1.0,GEHIRNS/magi-1.0,f16,1850,2313,81.30,1.787,3.024,0.800,180.0,5618895,31214,8.87
+magi-beta-1,GEHIRNS/magi-beta-1,f16,1841,2313,80.65,1.817,3.073,0.771,181.0,5473071,30245,8.60
+Q4_K_M,unsloth/Qwen3.5-4B-GGUF Q4_K_M,f16,1919,2313,84.14,2.553,3.779,0.703,146.6,5488318,37437,10.61
+Q2_K,bartowski/Qwen_Qwen3.5-4B-GGUF Q2_K,f16,1738,2313,77.06,1.912,3.148,0.675,165.5,5713628,34533,9.76
+BF16,unsloth/Qwen3.5-4B-GGUF BF16,f16,1915,2313,83.96,7.836,8.978,0.294,66.3,5490053,82753,23.22

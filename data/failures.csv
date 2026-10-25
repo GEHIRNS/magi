@@ -1,0 +1,7 @@
+config,tasks_total,tasks_failed,failed_with_loop,failed_without_loop,loops_all_tasks,think_budget_exhausted
+BF16,2313,398,13,385,79,730
+Q4_K_M,2313,394,18,376,76,734
+Q2_K,2313,575,337,238,771,1099
+magi-1.0,2313,463,99,364,218,808
+magi-1.0 + 8-bit KV,2313,479,92,387,211,787
+magi-beta-1,2313,472,84,388,197,771

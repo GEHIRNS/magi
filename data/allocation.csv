@@ -1,0 +1,26 @@
+budget,mixture,imatrix,file_GiB,E_long_top1_disagreement_pct,E_chat_top1_disagreement_pct,E_long_se_pct,E_chat_se_pct,J_pct,in_paper
+S,published UD-IQ2_XXS (Unsloth),publisher,1.4158,18.022,27.833,0.300,0.495,22.927,table
+S,greedy,Unsloth,1.4011,14.011,24.829,0.271,0.477,19.420,table
+S,random 1,Unsloth,1.4142,18.669,29.592,0.304,0.504,24.130,table (range)
+S,random 2,Unsloth,1.4150,18.987,30.765,0.306,0.510,24.876,table (range)
+S,random 3,Unsloth,1.4121,15.482,26.588,0.283,0.488,21.035,table (range)
+S,uniform Q2_K body,Unsloth,1.4402,15.348,24.231,0.282,0.474,19.790,table
+M,"greedy, own-trace imatrix (= magi-1.0)",own traces,1.7972,7.009,12.995,0.199,0.372,10.002,table
+M,greedy,Unsloth,1.7972,7.521,12.934,0.206,0.371,10.227,table
+M,"greedy, bartowski imatrix",bartowski,1.7972,7.241,13.288,0.202,0.375,10.264,no
+M,"greedy, own-trace imatrix, full-attention k/v/output at Q6_K (= magi-beta-1)",own traces,1.8275,6.911,12.958,0.198,0.371,9.934,text (Section 7)
+M,random 1,Unsloth,1.7979,11.917,21.983,0.253,0.458,16.950,table (range)
+M,random 2,Unsloth,1.7945,10.519,18.149,0.240,0.426,14.334,table (range)
+M,random 3,Unsloth,1.7976,13.382,21.702,0.266,0.456,17.542,table (range)
+M,uniform IQ3_XXS body,Unsloth,1.6218,9.139,15.230,0.225,0.397,12.184,table
+M,top-down from ceiling,Unsloth,1.7899,9.939,17.501,0.234,0.420,13.720,no
+L,published Q2_K (bartowski),publisher,2.0413,9.976,18.417,0.234,0.428,14.197,table
+L,published Q3_K_M (Unsloth),publisher,2.1359,5.562,9.917,0.179,0.330,7.739,table
+L,greedy,Unsloth,2.0289,5.379,9.746,0.176,0.328,7.562,table
+L,random 1,Unsloth,2.0338,9.823,16.768,0.233,0.413,13.296,table (range)
+L,random 2,Unsloth,2.0396,9.982,16.036,0.234,0.406,13.009,table (range)
+L,random 3,Unsloth,2.0320,9.341,16.573,0.227,0.411,12.957,table (range)
+L,uniform Q3_K body (Q6_K embedding),Unsloth,1.9300,7.357,13.593,0.204,0.379,10.475,table
+L,top-down from ceiling,Unsloth,2.0042,7.039,12.885,0.200,0.370,9.962,no
+-,published Q4_K_M (Unsloth),publisher,2.5527,3.101,5.325,0.135,0.248,4.213,figure
+-,published Q8_0 (Unsloth),publisher,4.1746,0.659,1.099,0.063,0.115,0.879,instrument table

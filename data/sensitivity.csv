@@ -1,0 +1,47 @@
+direction,tensor_group,params_share_pct,from_type,to_type,mix_tensor_GiB,delta_GiB,E_long_top1_disagreement_pct,E_chat_top1_disagreement_pct,J_pct,delta_J_pct_points,J_per_GiB_saved_or_spent,in_paper_figure
+reference,floor,,,,1.1965,,22.161,33.439,27.800,,,
+reference,ceiling,,,,2.3608,,3.492,6.339,4.915,,,
+down_from_ceiling,attn_v,0.50,Q4_K,IQ2_XXS,2.3549,-0.0060,6.215,8.818,7.516,2.601,437.1,yes
+down_from_ceiling,attn_k,0.50,Q4_K,IQ2_XXS,2.3549,-0.0060,4.554,7.596,6.075,1.160,194.8,yes
+down_from_ceiling,attn_output,1.99,Q4_K,IQ2_XXS,2.3370,-0.0238,6.252,10.442,8.347,3.431,144.2,yes
+down_from_ceiling,ssm_out,5.98,Q4_K,IQ2_XXS,2.2894,-0.0714,6.282,11.187,8.735,3.819,53.5,yes
+down_from_ceiling,attn_q,3.99,Q4_K,IQ2_XXS,2.3132,-0.0476,5.049,8.158,6.604,1.688,35.5,yes
+down_from_ceiling,ffn_up,17.95,Q4_K,IQ2_XXS,2.1466,-0.2142,8.284,14.949,11.617,6.701,31.3,yes
+down_from_ceiling,ffn_down,17.95,Q4_K,IQ2_XXS,2.1466,-0.2142,7.534,14.350,10.942,6.027,28.1,yes
+down_from_ceiling,attn_qkv,11.97,Q4_K,IQ2_XXS,2.2180,-0.1428,6.459,11.041,8.750,3.835,26.8,yes
+down_from_ceiling,attn_gate,5.98,Q4_K,IQ2_XXS,2.2894,-0.0714,5.281,8.867,7.074,2.159,30.2,yes
+down_from_ceiling,ffn_gate,17.95,Q4_K,IQ2_XXS,2.1466,-0.2142,6.691,12.665,9.678,4.762,22.2,yes
+down_from_ceiling,token_embd,15.11,Q6_K,Q4_K,2.2082,-0.1526,3.901,6.546,5.223,0.308,2.0,yes
+up_from_floor,attn_v,0.50,IQ2_XXS,IQ3_XXS,1.1990,0.0024,21.587,32.780,27.184,-0.616,252.5,no
+up_from_floor,attn_v,0.50,IQ2_XXS,Q4_K,1.2025,0.0060,21.142,32.829,26.986,-0.814,136.9,no
+up_from_floor,attn_k,0.50,IQ2_XXS,IQ3_XXS,1.1990,0.0024,21.722,33.317,27.520,-0.280,114.9,no
+up_from_floor,attn_k,0.50,IQ2_XXS,Q4_K,1.2025,0.0060,21.496,33.024,27.260,-0.540,90.7,no
+up_from_floor,attn_output,1.99,IQ2_XXS,IQ3_XXS,1.2063,0.0098,20.586,32.169,26.377,-1.423,145.7,no
+up_from_floor,attn_output,1.99,IQ2_XXS,Q4_K,1.2203,0.0238,20.238,32.120,26.179,-1.621,68.1,no
+up_from_floor,ssm_out,5.98,IQ2_XXS,IQ3_XXS,1.2258,0.0293,20.952,31.448,26.200,-1.600,54.6,no
+up_from_floor,ssm_out,5.98,IQ2_XXS,Q4_K,1.2679,0.0714,20.330,31.070,25.700,-2.100,29.4,no
+up_from_floor,attn_q,3.99,IQ2_XXS,IQ3_XXS,1.2160,0.0195,21.551,32.755,27.153,-0.647,33.1,no
+up_from_floor,attn_q,3.99,IQ2_XXS,Q4_K,1.2441,0.0476,21.276,33.085,27.181,-0.619,13.0,no
+up_from_floor,ffn_up,17.95,IQ2_XXS,Q2_K,1.2460,0.0494,20.989,31.558,26.273,-1.527,30.9,no
+up_from_floor,ffn_up,17.95,IQ2_XXS,IQ3_XXS,1.2844,0.0879,20.250,30.007,25.129,-2.671,30.4,no
+up_from_floor,ffn_up,17.95,IQ2_XXS,Q4_K,1.4107,0.2142,19.444,29.702,24.573,-3.227,15.1,no
+up_from_floor,ffn_down,17.95,IQ2_XXS,Q2_K,1.2460,0.0494,20.757,31.949,26.353,-1.447,29.3,no
+up_from_floor,ffn_down,17.95,IQ2_XXS,IQ3_XXS,1.2844,0.0879,19.615,30.239,24.927,-2.873,32.7,no
+up_from_floor,ffn_down,17.95,IQ2_XXS,Q4_K,1.4107,0.2142,19.035,29.128,24.081,-3.719,17.4,no
+up_from_floor,attn_qkv,11.97,IQ2_XXS,Q2_K,1.2295,0.0330,20.556,32.206,26.381,-1.419,43.1,no
+up_from_floor,attn_qkv,11.97,IQ2_XXS,IQ3_XXS,1.2551,0.0586,20.360,31.705,26.032,-1.768,30.2,no
+up_from_floor,attn_qkv,11.97,IQ2_XXS,Q4_K,1.3393,0.1428,19.737,31.461,25.599,-2.201,15.4,no
+up_from_floor,attn_gate,5.98,IQ2_XXS,IQ3_XXS,1.2258,0.0293,21.093,32.914,27.004,-0.796,27.2,no
+up_from_floor,attn_gate,5.98,IQ2_XXS,Q4_K,1.2679,0.0714,21.160,32.352,26.756,-1.044,14.6,no
+up_from_floor,ffn_gate,17.95,IQ2_XXS,Q2_K,1.2460,0.0494,20.971,32.719,26.845,-0.955,19.3,no
+up_from_floor,ffn_gate,17.95,IQ2_XXS,IQ3_XXS,1.2844,0.0879,20.385,31.473,25.929,-1.871,21.3,no
+up_from_floor,ffn_gate,17.95,IQ2_XXS,Q4_K,1.4107,0.2142,20.067,31.216,25.642,-2.159,10.1,no
+up_from_floor,token_embd,15.11,Q4_K,Q6_K,1.3491,0.1526,21.972,32.767,27.370,-0.430,2.8,no
+up_from_floor,ffn_gate+up+down layers 0-7,,IQ2_XXS,Q4_K,1.3572,0.1607,20.317,30.801,25.559,-2.241,13.9,no
+up_from_floor,ffn_gate+up+down layers 8-15,,IQ2_XXS,Q4_K,1.3572,0.1607,18.834,29.946,24.390,-3.410,21.2,no
+up_from_floor,ffn_gate+up+down layers 16-23,,IQ2_XXS,Q4_K,1.3572,0.1607,20.354,31.473,25.913,-1.887,11.7,no
+up_from_floor,ffn_gate+up+down layers 24-31,,IQ2_XXS,Q4_K,1.3572,0.1607,21.343,31.815,26.579,-1.221,7.6,no
+up_from_floor,attn_qkv layers 0-7,,IQ2_XXS,Q4_K,1.2322,0.0357,21.832,33.024,27.428,-0.372,10.4,no
+up_from_floor,attn_qkv layers 8-15,,IQ2_XXS,Q4_K,1.2322,0.0357,20.861,32.377,26.619,-1.181,33.1,no
+up_from_floor,attn_qkv layers 16-23,,IQ2_XXS,Q4_K,1.2322,0.0357,21.270,32.865,27.068,-0.732,20.5,no
+up_from_floor,attn_qkv layers 24-31,,IQ2_XXS,Q4_K,1.2322,0.0357,21.990,33.170,27.580,-0.220,6.2,no
