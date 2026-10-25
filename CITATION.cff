@@ -3,7 +3,10 @@ message: "If you use magi-1.0, please cite it as below."
 title: "Where the Bits Go: Sensitivity-Allocated Mixed Precision for a 4B Reasoning Model on a 12 GB Consumer GPU"
 type: software
 authors:
-  - name: GEHIRNS
+  - given-names: Eason
+    family-names: Sun
+    orcid: "https://orcid.org/0009-0002-4027-2281"
+    affiliation: GEHIRNS
 date-released: 2026-10-24
 license: Apache-2.0
 url: "https://huggingface.co/GEHIRNS/magi-1.0"
@@ -14,6 +17,20 @@ keywords:
   - GGUF
   - Qwen3.5-4B
   - capability density
+preferred-citation:
+  type: generic
+  title: "Where the Bits Go: Sensitivity-Allocated Mixed Precision for a 4B Reasoning Model on a 12 GB Consumer GPU"
+  authors:
+    - given-names: Eason
+      family-names: Sun
+      orcid: "https://orcid.org/0009-0002-4027-2281"
+      affiliation: GEHIRNS
+  year: 2026
+  month: 10
+  publisher:
+    name: Zenodo
+  doi: 10.5281/zenodo.23630199
+  url: "https://doi.org/10.5281/zenodo.23630199"
 references:
   - type: software
     title: "Qwen3.5-4B"
