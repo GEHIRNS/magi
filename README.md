@@ -6,7 +6,7 @@
 
 magi-1.0 is a training-free mixed-precision quantization of [Qwen/Qwen3.5-4B](https://huggingface.co/Qwen/Qwen3.5-4B) by the Qwen team, made by GEHIRNS. The weights are Qwen's own; we only chose how many bits each part of the model gets, using standard GGUF formats. It runs unmodified in llama.cpp and Ollama.
 
-**Model:** [huggingface.co/GEHIRNS/magi-1.0](https://huggingface.co/GEHIRNS/magi-1.0) · **Paper:** [Where the Bits Go (PDF)](paper/where-the-bits-go.pdf) · **DOI:** [10.5281/zenodo.23630199](https://doi.org/10.5281/zenodo.23630199)
+**Model:** [huggingface.co/GEHIRNS/magi-1.0](https://huggingface.co/GEHIRNS/magi-1.0) · **Paper:** [Where the Bits Go (PDF)](paper/where-the-bits-go.pdf) · **DOI:** [10.5281/zenodo.23630199](https://doi.org/10.5281/zenodo.23630199) · **Website:** [gehirns.pages.dev](https://gehirns.pages.dev/)
 
 <p align="center"><img src="images/headline.png" alt="magi-1.0 with an 8-bit KV cache vs Qwen3.5-4B BF16: 3.4× less GPU memory, 96% of the benchmark score, 2.7× faster decoding, 3.0× capability per GiB" width="100%"></p>
 
