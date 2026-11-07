@@ -1,5 +1,7 @@
 # Data behind the paper
 
+magi-1.0 in these files is the model released as [GEHIRNS/magi-1.0-4B](https://huggingface.co/GEHIRNS/magi-1.0-4B) (renamed on 2026-11-07; the paper keeps the name magi-1.0).
+
 All values were measured by us on one workstation: an RTX 5070 with 12 GB, running Windows 11 and Ollama 0.40.3. Columns computed from other columns are marked INFERRED. Table and figure numbers refer to `paper/where-the-bits-go.pdf`.
 
 The files contain numbers and task identifiers only: no problem text, prompts, model outputs or thinking traces.

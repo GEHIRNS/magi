@@ -1,4 +1,4 @@
-# Rebuilding magi-1.0 and magi-beta-1
+# Rebuilding magi-1.0-4B (magi-1.0 in the paper) and magi-beta-1
 
 Both models are Qwen3.5-4B with no training. Every weight tensor of the official model is re-quantized to a type chosen for its tensor class. A rebuild is one `llama-quantize` call that runs on the CPU in about two minutes.
 
@@ -25,7 +25,7 @@ From the repository root:
 llama-quantize --pure \
   --imatrix recipe/imatrix-own-traces.gguf \
   --tensor-type-file recipe/magi-1.0.overrides.txt \
-  Qwen3.5-4B-BF16.gguf magi-1.0.gguf IQ2_XXS
+  Qwen3.5-4B-BF16.gguf magi-1.0-4B.gguf IQ2_XXS
 
 llama-quantize --pure \
   --imatrix recipe/imatrix-own-traces.gguf \
@@ -37,11 +37,11 @@ llama-quantize --pure \
 - `IQ2_XXS` is only the fallback type for tensors that no rule matches. Every quantizable tensor matches a rule, so no tensor gets it. It also sets `general.file_type` (19) as in the release.
 - The other 177 tensors (norms, the 4-tap DeltaNet convolution, A, Δt bias) stay in F32.
 - The thread count does not change the output: builds with 8 and 12 threads gave identical tensors.
-- magi-beta-1 differs from magi-1.0 only in the 24 full-attention key, value and output projections, which are Q6_K instead of Q4_K.
+- magi-beta-1 differs from magi-1.0-4B only in the 24 full-attention key, value and output projections, which are Q6_K instead of Q4_K.
 
 | | Tensors | Tensor data | Bits per weight |
 |---|---|---|---|
-| magi-1.0 | 426 | 1,918,808,064 bytes (1,829.9 MiB) | 3.650 |
+| magi-1.0-4B | 426 | 1,918,808,064 bytes (1,829.9 MiB) | 3.650 |
 | magi-beta-1 | 426 | 1,951,248,384 bytes (1,860.9 MiB) | 3.712 |
 
 Bits per weight are over all 4,205,751,296 parameters. `magi-1.0.tensor-types.tsv` and `magi-beta-1.tensor-types.tsv` list every tensor with these columns:
@@ -57,7 +57,7 @@ The released files:
 
 | File | Bytes | SHA-256 |
 |---|---|---|
-| magi-1.0 | 1,929,776,256 | `26b4f5b3eadb72eb51d605910a80b35e29b5c33711e404da53037b2f00ca9d0b` |
+| magi-1.0-4B | 1,929,776,256 | `26b4f5b3eadb72eb51d605910a80b35e29b5c33711e404da53037b2f00ca9d0b` |
 | magi-beta-1 | 1,962,216,576 | `7b70afd257974cafa9d024b405b8d238a9b0f855aa1d040f834d4a0901ffb911` |
 
 The released files were built with exactly the commands above, run from the repository root. A rebuild done the same way should therefore match the whole-file SHA-256.
@@ -66,7 +66,7 @@ To check the tensors of a rebuild, for example one made with other paths:
 
 ```sh
 pip install gguf
-python recipe/verify_tensors.py magi-1.0.gguf recipe/magi-1.0.tensor-types.tsv
+python recipe/verify_tensors.py magi-1.0-4B.gguf recipe/magi-1.0.tensor-types.tsv
 python recipe/verify_tensors.py magi-beta-1.gguf recipe/magi-beta-1.tensor-types.tsv
 ```
 

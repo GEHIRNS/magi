@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use magi-1.0, please cite it as below."
+message: "If you use magi-1.0-4B, please cite it as below."
 title: "Where the Bits Go: Sensitivity-Allocated Mixed Precision for a 4B Reasoning Model on a 12 GB Consumer GPU"
 type: software
 authors:
@@ -9,7 +9,7 @@ authors:
     affiliation: GEHIRNS
 date-released: 2026-10-24
 license: Apache-2.0
-url: "https://huggingface.co/GEHIRNS/magi-1.0"
+url: "https://huggingface.co/GEHIRNS/magi-1.0-4B"
 repository-code: "https://github.com/GEHIRNS/magi"
 keywords:
   - quantization
