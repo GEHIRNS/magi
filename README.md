@@ -72,6 +72,7 @@ All benchmark numbers were measured without a system prompt.
 |---|---|
 | [GEHIRNS/magi-1.0-4B](https://huggingface.co/GEHIRNS/magi-1.0-4B) | this recipe, training-free (the model in the paper) |
 | [GEHIRNS/magi-1.1-4B](https://huggingface.co/GEHIRNS/magi-1.1-4B) | magi-1.0-4B plus a LoRA that teaches it to finish its thinking: 28% less thinking, +1.2 points on our benchmark |
+| [GEHIRNS/magi-1.2-4B](https://huggingface.co/GEHIRNS/magi-1.2-4B) | magi-1.1-4B's weights with this recipe re-fitted to the 4B by measurement (own-trace importance matrix, per-layer sensitivity): density 0.968, 64 MiB smaller, same score; thinks 11% more |
 | [GEHIRNS/magi-1.2-2B](https://huggingface.co/GEHIRNS/magi-1.2-2B) | Qwen3.5-2B: the think-less LoRA, one round of preference training against repetition loops, and per-layer bits fitted to the 2B. Capability density 1.305 |
 | [GEHIRNS/magi-1.1-2B](https://huggingface.co/GEHIRNS/magi-1.1-2B) · [GEHIRNS/magi-1.0-2B](https://huggingface.co/GEHIRNS/magi-1.0-2B) | earlier 2B builds: the think-less LoRA with this recipe, and this recipe alone |
 | [GEHIRNS/magi-beta-1](https://huggingface.co/GEHIRNS/magi-beta-1) | experimental: same recipe, full-attention key/value/output at Q6_K |
